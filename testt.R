@@ -22,7 +22,6 @@ ui <- fluidPage(
     )
   ))
 
-
 server <- function(input, output){
   
   output$tekst1 <- renderText(input$input1)
