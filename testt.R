@@ -35,12 +35,3 @@ server <- function(input, output){
     )})}
 shinyApp(ui, server)
 
-rep(c(1880, 1200),c(7,4))
-
-summary(babynames)
-nie_imie = which(babynames[,3]!= "Marry")
-babynames[-nie_imie,]
-
-
-nie_imie = which(babynames[,3]!= input$input1)
-babynames[-nie_imie,][,1]
